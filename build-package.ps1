@@ -1,7 +1,7 @@
-# Build and Package Script for JumpscareFoxy Mod
+# Build and Package Script for JumpscareCarl Mod
 # This script builds the mod and creates a Thunderstore-ready package
 
-Write-Host "`n=== JumpscareFoxy Build & Package Script ===" -ForegroundColor Cyan
+Write-Host "`n=== JumpscareCarl Build & Package Script ===" -ForegroundColor Cyan
 
 # Get version from manifest.json
 $manifestPath = ".\manifest.json"
@@ -37,8 +37,8 @@ New-Item -ItemType Directory -Path "$pluginDir\assets\frames" -Force | Out-Null
 
 # Copy files to package
 Write-Host "Copying files..." -ForegroundColor Yellow
-Copy-Item ".\bin\Release\netstandard2.1\jumpscareFoxy.dll" "$pluginDir\"
-Copy-Item ".\assets\jumpscare.wav" "$pluginDir\assets\"
+Copy-Item ".\bin\Release\netstandard2.1\jumpscareCarl.dll" "$pluginDir\"
+Copy-Item ".\assets\evil_larry.wav" "$pluginDir\assets\"
 Copy-Item ".\assets\frames\*.png" "$pluginDir\assets\frames\"
 Copy-Item ".\manifest.json" "$packageDir\"
 Copy-Item ".\icon.png" "$packageDir\"
