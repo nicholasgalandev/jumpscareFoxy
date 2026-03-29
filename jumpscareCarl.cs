@@ -81,7 +81,7 @@ public class Configuration
             new ConfigDescription("1/X chance per second", 
                 new AcceptableValueRange<int>(10, 100000))).Value;
         ManualTriggerEnabled = config.Bind("Controls", "ManualTrigger", true, "Enable manual trigger").Value;
-        TriggerKey = config.Bind("Controls", "TriggerKey", KeyCode.J, "Manual trigger key").Value;
+        TriggerKey = config.Bind("Controls", "TriggerKey", KeyCode.K, "Manual trigger key").Value;
         AnimationFPS = config.Bind("Animation", "FPS", 15, 
             new ConfigDescription("Animation speed", 
                 new AcceptableValueRange<int>(5, 60))).Value;
